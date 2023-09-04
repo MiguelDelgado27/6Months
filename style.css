@@ -19,7 +19,7 @@ h2 {
 .birthdayCard {
   position: relative;
   width: 250px;
-  height:350px;
+  height:500px;
   cursor: pointer;
   transform-style: preserve-3d;
 	transform: perspective(2500px);
@@ -30,7 +30,7 @@ h2 {
   position: relative;
   background-color: #fff;
   width: 250px;
-  height:350px;
+  height:500px;
   overflow: hidden;
   transform-origin: left;
   box-shadow: inset 100px 20px 100px rgba(0,0,0,.2), 30px 0 50px rgba(0,0,0,0.4);
@@ -120,7 +120,7 @@ h2 {
   background-color: #fff;
   border: 2px solid yellowgreen;
   width: 250px;
-  height:350px;
+  height:500px;
   z-index:-1;
   left:0;
   top:0;
@@ -188,4 +188,13 @@ p {
  100% {
   color: blue;
  }
+}
+
+.vertical-image {
+  width: auto;
+  height: 30%; /* Utiliza el 100% de la altura de la tarjeta */
+  position: absolute;
+  top: 35%; /* Coloca la imagen en la parte superior de la tarjeta */
+  left: 50%; /* Centra horizontalmente */
+  transform: translateX(-50%) rotate(-90deg); 
 }
